@@ -1,0 +1,11 @@
+[user]
+	email = pankajkapasiya29@gmail.com
+	name = PankajKapasiya
+[core]
+	autocrlf = true
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = false
+	keepBackup = false

@@ -1,0 +1,32 @@
+{
+  "name": "iiit-una-feed",
+  "version": "1.0.0",
+  "description": "IIIT-Una Feed - AI-powered campus feed application for events, lost & found, and announcements",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "install-server": "npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "dev-full": "concurrently \"npm run dev\" \"cd client && npm start\""
+  },
+  "keywords": ["feed", "campus", "ai", "events", "lost-found", "announcements"],
+  "author": "IIIT-Una Hackathon Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.20.1",
+    "uuid": "^9.0.1",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
